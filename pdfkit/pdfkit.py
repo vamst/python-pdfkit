@@ -155,8 +155,8 @@ class PDFKit(object):
         if 'Error' in stderr:
             raise IOError('wkhtmltopdf reported an error:\n' + stderr)
 
-        if exit_code != 0:
-            raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, stderr))
+        #if exit_code != 0:
+            #raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, stderr))
 
         # Since wkhtmltopdf sends its output to stderr we will capture it
         # and properly send to stdout
