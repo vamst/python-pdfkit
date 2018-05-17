@@ -152,8 +152,8 @@ class PDFKit(object):
                           'Go to the link below for more information\n'
                           'https://github.com/JazzCore/python-pdfkit/wiki/Using-wkhtmltopdf-without-X-server' % stderr)
 
-        if 'Error' in stderr:
-            raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+        #if 'Error' in stderr:
+            #raise IOError('wkhtmltopdf reported an error:\n' + stderr)
 
         #if exit_code != 0:
             #raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, stderr))
